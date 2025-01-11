@@ -5,9 +5,12 @@ using UnityEngine.InputSystem;
 
 public class PlayerShoot : MonoBehaviour
 {
-    
     public Transform shootingPoint;
     public GameObject bulletPrefab;
+
+    public float fireRate;
+    
+    public bool canFire = true;
     
 
     
@@ -20,7 +23,7 @@ public class PlayerShoot : MonoBehaviour
     }
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if(Input.GetButton("Fire1"))
         {
             Shoot();
         }
@@ -28,6 +31,9 @@ public class PlayerShoot : MonoBehaviour
 
     public void Shoot()
     {
-        Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
+        Instantiate(bulletPrefab, shootingPoint.position, transform.rotation); // Spawns bullet gameObject, Spawns from Shooting point possition, rotation? 
+        canFire = false; 
+        float timeToNextFire = 1 / fireRate;
+        canFire = false; 
     }
 }

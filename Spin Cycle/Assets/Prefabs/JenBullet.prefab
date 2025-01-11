@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6625421035386293328}
   - component: {fileID: 4797935415227707801}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: JenBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
