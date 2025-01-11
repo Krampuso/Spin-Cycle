@@ -7,6 +7,10 @@ public class Bullet : MonoBehaviour
     public float speed;
     private Rigidbody2D rb;
 
+    public float bulletLife = 2f;
+    private float timer = 0f;
+    
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();     
@@ -16,6 +20,8 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
+
+    
 }

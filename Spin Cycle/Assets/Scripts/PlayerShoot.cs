@@ -8,9 +8,9 @@ public class PlayerShoot : MonoBehaviour
     public Transform shootingPoint;
     public GameObject bulletPrefab;
 
-    public float fireRate;
+    public float fireRate = 1f;
     
-    public bool canFire = true;
+    private float timer = 0f;
     
 
     
@@ -23,17 +23,20 @@ public class PlayerShoot : MonoBehaviour
     }
     void Update()
     {
+        timer += Time.deltaTime;
         if(Input.GetButton("Fire1"))
         {
-            Shoot();
+            if(timer >= fireRate)
+            {
+               Shoot();
+               timer = 0; 
+            }
+            
         }
     }
 
     public void Shoot()
     {
-        Instantiate(bulletPrefab, shootingPoint.position, transform.rotation); // Spawns bullet gameObject, Spawns from Shooting point possition, rotation? 
-        canFire = false; 
-        float timeToNextFire = 1 / fireRate;
-        canFire = false; 
+        Instantiate(bulletPrefab, shootingPoint.position, transform.rotation); // Spawns bullet gameObject, Spawns from Shooting point possition, rotation?
     }
 }
