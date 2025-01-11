@@ -1,22 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerShoot : MonoBehaviour
 {
-    public Rigidbody2D projectile;
-    public float speed = 4;
+    
+    public Transform shootingPoint;
+    public GameObject bulletPrefab;
+    
 
     
     // Start is called before the first frame update
 
     // Update is called once per frame
+    void Start()
+    {
+
+    }
     void Update()
     {
         if(Input.GetButtonDown("Fire1"))
         {
-            Rigidbody2D p = Instantiate(projectile, transform.position, transform.rotation);
-            p.velocity = transform.forward * speed;
+            Shoot();
         }
+    }
+
+    public void Shoot()
+    {
+        Instantiate(bulletPrefab, shootingPoint.position, transform.rotation);
     }
 }
