@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletSpawner : MonoBehaviour
 {
-    enum SpawnerType { Straight, Spin}
+    enum SpawnerType { Straight, Spin, fasterSpin}
 
     [Header("Bullet Attributes")]
     public GameObject bullet;
@@ -28,6 +28,7 @@ public class BulletSpawner : MonoBehaviour
     {
         timer += Time.deltaTime;
         if(spawnerType == SpawnerType.Spin) transform.eulerAngles = new Vector3(0f,0f,transform.eulerAngles.z+1f);
+        if(spawnerType == SpawnerType.fasterSpin) transform.eulerAngles = new Vector3(0f,0f,transform.eulerAngles.z+3f);
         if(timer >= firingRate)
         {
             Fire();
