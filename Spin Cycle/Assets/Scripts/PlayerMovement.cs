@@ -20,7 +20,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
          Move();
-         Flip();
     }
 
     void Move()
@@ -28,13 +27,8 @@ public class PlayerMovement : MonoBehaviour
         speedX = Input.GetAxisRaw("Horizontal") * moveSpeed;
         speedY = Input.GetAxisRaw("Vertical") * moveSpeed;
         rb.velocity = new Vector2(speedX, speedY);
-    }
 
-    void Flip()
-    {
-        /*if (Keyboard.current.downAKey.wasPressedThisFrame)
-        {
-            transform.Rotate(0,180,0);
-        }*/
+        //if(rb.velocity.magnitude > moveSpeed)
+          //  moveSpeed = Mathf.Clamp(rb.velocity.magnitude, 0, 10);
     }
 }

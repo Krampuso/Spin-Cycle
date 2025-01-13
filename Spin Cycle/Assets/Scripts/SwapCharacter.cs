@@ -4,32 +4,42 @@ using UnityEngine;
 
 public class SwapCharacter : MonoBehaviour
 {
-    public GameObject[] players;
+    public int selectedPlayer = 0;
     
     void Start()
     {
-        players = GameObject.FindGameObjectsWithTag("Player");
-        Debug.Log(players[0]);
-        Debug.Log(players[1]);
-        Debug.Log(players[2]);
+        SelectPlayer();
     }
 
     // Update is called once per frame
     void Update()
     {
+        int previousSelectedPlayer = selectedPlayer;
+
         if(Input.GetKeyDown(KeyCode.R))
         {
-            SwapPlayer();
+            if(selectedPlayer >= transform.childCount - 1)
+                selectedPlayer = 0;
+            else
+                selectedPlayer++;
+        }
+
+        if (previousSelectedPlayer != selectedPlayer)
+        {
+            SelectPlayer();
         }
     }
 
-    public void SwapPlayer()
+    void SelectPlayer()
     {
-        for(int i = 0; i <3; i++)
+        int i = 0;
+        foreach (Transform character in transform)
         {
-           players[i].SetActive(true);
-           int temp = i;
-           Debug.Log(temp);
+            if(i == selectedPlayer)
+                character.gameObject.SetActive(true);
+            else 
+                character.gameObject.SetActive(false);
+            i++;
         }
     }
     
