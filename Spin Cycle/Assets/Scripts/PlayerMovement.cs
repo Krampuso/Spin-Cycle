@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     float speedX;
     float speedY;
-    Rigidbody2D rb; 
+    public Rigidbody2D rb; 
 
     void Start()
     {
@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
          Move();
+        
     }
 
     void Move()
@@ -28,7 +29,10 @@ public class PlayerMovement : MonoBehaviour
         speedY = Input.GetAxisRaw("Vertical") * moveSpeed;
         rb.velocity = new Vector2(speedX, speedY);
 
-        //if(rb.velocity.magnitude > moveSpeed)
-          //  moveSpeed = Mathf.Clamp(rb.velocity.magnitude, 0, 10);
+        if(rb.velocity.magnitude > moveSpeed)
+            {
+                 rb.velocity = rb.velocity.normalized * moveSpeed;
+            }
+            
     }
 }

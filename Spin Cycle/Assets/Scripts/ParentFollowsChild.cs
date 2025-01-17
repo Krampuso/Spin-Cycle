@@ -29,6 +29,8 @@ public class ParentFollowsChild : MonoBehaviour
             Vector2 averageChildPosition = GetAverageChildPosition();
             transform.position = (Vector3)(averageChildPosition + initialOffset);
         }
+
+
     }
 
     // Helper method to calculate the average position of all child objects
