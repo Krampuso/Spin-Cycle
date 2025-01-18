@@ -7,6 +7,7 @@ public class EnemyBullet : MonoBehaviour
     public float bulletLife = 1f;
     public float rotation = 0f;
     public float speed = 1f;
+    public int bulletDamage = 5;
 
     private Vector2 spawnPoint;
     private float timer = 0f;
