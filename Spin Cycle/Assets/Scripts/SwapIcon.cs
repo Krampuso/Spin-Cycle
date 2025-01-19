@@ -18,29 +18,19 @@ public class SwapIcon : MonoBehaviour
     
     void IconChange()
     {
-        if(player1.activeSelf)
-        {
-            transform.GetChild(0).gameObject.SetActive(true);
-        }
-        else if (!player1.activeSelf)
-        {
-            transform.GetChild(0).gameObject.SetActive(false);
-        }
-        if(player2.activeSelf)
-        {
-            transform.GetChild(1).gameObject.SetActive(true);
-        }
-        else if (!player2.activeSelf)
-        {
-            transform.GetChild(1).gameObject.SetActive(false);
-        }
-        if(player3.activeSelf)
-        {
-            transform.GetChild(2).gameObject.SetActive(true);
-        }
-        else if (!player3.activeSelf)
-        {
-            transform.GetChild(2).gameObject.SetActive(false);
-        }
+        GameObject[] players = {player1,player2,player3};
+
+         for(int i = 0; i < transform.childCount; i++) //Turn off all icons first
+         {
+            transform.GetChild(i).gameObject.SetActive(false);
+         }
+
+         for(int i = 0; i < players.Length; i++)
+         {
+            if(players[i].activeSelf)
+            {
+                transform.GetChild(i).gameObject.SetActive(true);
+            }
+         }
     }
 }

@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if(enemyBullet == null)
         {
-            Debug.LogError("Enemy bullet is not assigned!");
+            Debug.Log("Enemy bullet is not assigned!");
 
         }
         else
@@ -29,10 +29,10 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log("This script works");
     }
 
-    void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "EnemyBullet")
             {
