@@ -25,6 +25,7 @@ public class SwapIcon : MonoBehaviour
             transform.GetChild(i).gameObject.SetActive(false);
          }
 
+        //Activate the icon corresponding to the active player 
          for(int i = 0; i < players.Length; i++)
          {
             if(players[i].activeSelf)
