@@ -21,7 +21,7 @@ public class EnemyHealth : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     { 
-        Debug.Log("Script is working");
+        Debug.Log("Collision Script is working");
 
         bullet = col.gameObject.GetComponent<Bullet>();
 
@@ -30,6 +30,7 @@ public class EnemyHealth : MonoBehaviour
             Debug.Log("Collided");
             enemyHP -= bullet.bulletDamage;
             Debug.Log("Enemy Hp is " + enemyHP);
+            
         }
         else
         {
