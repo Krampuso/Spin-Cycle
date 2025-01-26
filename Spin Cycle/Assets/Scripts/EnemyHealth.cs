@@ -30,12 +30,16 @@ public class EnemyHealth : MonoBehaviour
             Debug.Log("Collided");
             enemyHP -= bullet.bulletDamage;
             Debug.Log("Enemy Hp is " + enemyHP);
+            if(enemyHP <= 0){
+                Destroy(gameObject);
+            }
             
         }
         else
         {
             Debug.Log("Not working");
         }
+        Destroy(col.gameObject);
             
             
         
