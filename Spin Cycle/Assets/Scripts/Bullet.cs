@@ -9,6 +9,8 @@ public class Bullet : MonoBehaviour
 
     public float bulletLife = 2f;
     private float timer = 0f;
+
+    public int bulletDamage = 5;
     
 
     void Start()
