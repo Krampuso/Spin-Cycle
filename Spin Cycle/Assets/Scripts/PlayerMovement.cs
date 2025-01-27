@@ -7,8 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;
 
-    float speedX;
-    float speedY;
+    private Vector2 movementInput;
     public Rigidbody2D rb; 
 
     void Start()
@@ -19,20 +18,16 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         Move();
-        
+        movementInput.x = Input.GetAxisRaw("Horizontal");
+        movementInput.y = Input.GetAxisRaw("Vertical");
+        movementInput = movementInput.normalized;
     }
-
-    void Move()
+    
+    void FixedUpdate()
     {
-        speedX = Input.GetAxisRaw("Horizontal") * moveSpeed;
-        speedY = Input.GetAxisRaw("Vertical") * moveSpeed;
-        rb.velocity = new Vector2(speedX, speedY);
+       rb.velocity = movementInput * moveSpeed;
 
-        if(rb.velocity.magnitude > moveSpeed)
-            {
-                 rb.velocity = rb.velocity.normalized * moveSpeed;
-            }
-            
+       rb.velocity = Vector2.ClampMagnitude(rb.velocity, moveSpeed);
     }
+
 }
