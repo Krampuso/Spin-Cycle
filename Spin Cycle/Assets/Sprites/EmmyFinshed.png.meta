@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f0a02404fc79a5b47afcf63dc83e7a94
+guid: c7c85f993557f514a9c32faf2eeca8ea
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JenFinshed_0
+      name: EmmyFinshed_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 5
-        width: 55
-        height: 62
+        x: 17
+        y: 1
+        width: 31
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73be029b835a8384494c7abf7e3d7fa9
-      internalID: 1605836416
+      spriteID: 9bb0a68d9e37ea344bbcda1394748cec
+      internalID: -686034367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JenFinshed_1
+      name: EmmyFinshed_1
       rect:
         serializedVersion: 2
-        x: 72
-        y: 5
-        width: 55
-        height: 62
+        x: 84
+        y: 1
+        width: 31
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d01bc3239ab88e145b8cf46c15a77d4f
-      internalID: 1507694688
+      spriteID: 1cffb02cd73aae74e870328d04ab1610
+      internalID: 1843046310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JenFinshed_2
+      name: EmmyFinshed_2
       rect:
         serializedVersion: 2
-        x: 140
-        y: 5
-        width: 55
-        height: 62
+        x: 152
+        y: 1
+        width: 31
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da456168c30b7f34689276d2429a9371
-      internalID: -802282961
+      spriteID: dd62eae4d7102874f8044e6d18ea160b
+      internalID: -381173698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JenFinshed_3
+      name: EmmyFinshed_3
       rect:
         serializedVersion: 2
-        x: 211
-        y: 5
-        width: 50
-        height: 60
+        x: 220
+        y: 1
+        width: 30
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f282ce0d0ed35a547a2b06d0d649c076
-      internalID: -1445419155
+      spriteID: c5a012fbae23c184982c491db3bba9a0
+      internalID: -62577184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JenFinshed_4
+      name: EmmyFinshed_4
       rect:
         serializedVersion: 2
-        x: 277
-        y: 5
-        width: 50
-        height: 60
+        x: 286
+        y: 1
+        width: 30
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b785ec8042215794aaefbb14cbd6d308
-      internalID: -1856700339
+      spriteID: 93647df66ed7c4e46a05dd6c533e9c94
+      internalID: -1313924808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JenFinshed_5
+      name: EmmyFinshed_5
       rect:
         serializedVersion: 2
-        x: 338
-        y: 5
-        width: 55
-        height: 62
+        x: 350
+        y: 1
+        width: 31
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34e07140f8a85d342a6abc39ada51089
-      internalID: -1308125640
+      spriteID: 8852a76b1760bbe4aa50654619d28661
+      internalID: 798719026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JenFinshed_6
+      name: EmmyFinshed_6
       rect:
         serializedVersion: 2
-        x: 402
-        y: 5
-        width: 55
-        height: 62
+        x: 414
+        y: 1
+        width: 31
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c70d53d43accb84ab819b3a0cde8ff0
-      internalID: -1878222862
+      spriteID: 2f5e44137ce533b499b95412db4c1525
+      internalID: 482108877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JenFinshed_7
+      name: EmmyFinshed_7
       rect:
         serializedVersion: 2
-        x: 467
-        y: 5
-        width: 55
-        height: 62
+        x: 479
+        y: 1
+        width: 31
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bb9bfddb56fbd745a5b3866d7448759
-      internalID: -684640884
+      spriteID: 7c7e062c85211c740a78540e2e358098
+      internalID: 25421689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JenFinshed_8
+      name: EmmyFinshed_8
       rect:
         serializedVersion: 2
-        x: 532
-        y: 5
-        width: 55
-        height: 62
+        x: 544
+        y: 1
+        width: 31
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51f1371d8b0d02346bd00beed0d1f333
-      internalID: -774072246
+      spriteID: 96a24c66d6cd6e942882c997d8744f5c
+      internalID: 2128899231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JenFinshed_9
+      name: EmmyFinshed_9
       rect:
         serializedVersion: 2
-        x: 596
-        y: 5
-        width: 55
-        height: 62
+        x: 608
+        y: 1
+        width: 31
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,20 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71679528dbb8b1b4dbb763569bebe51d
-      internalID: 2056491390
+      spriteID: 19eb6ac4853561e47a7eb69207dbb09d
+      internalID: -2142420514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JenFinshed_10
+      name: EmmyFinshed_10
       rect:
         serializedVersion: 2
-        x: 660
-        y: 4
-        width: 50
-        height: 60
+        x: 672
+        y: 1
+        width: 30
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,20 +334,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bbdd9a6aa83da9498376811445a6663
-      internalID: 1785401243
+      spriteID: 73025d2b34d2ace48a83d3f78b93764b
+      internalID: -423162760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JenFinshed_11
+      name: EmmyFinshed_11
       rect:
         serializedVersion: 2
-        x: 726
-        y: 4
-        width: 50
-        height: 60
+        x: 738
+        y: 1
+        width: 30
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,20 +355,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61a02576117b1f74ab7090bee2c0a343
-      internalID: 1049361163
+      spriteID: fb99969b3a8138349b27220a68579ed8
+      internalID: 1058232019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JenFinshed_12
+      name: EmmyFinshed_12
       rect:
         serializedVersion: 2
-        x: 794
-        y: 5
-        width: 55
-        height: 62
+        x: 806
+        y: 1
+        width: 31
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,20 +376,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55766bbca8a12984687084e05730a7b8
-      internalID: -751757264
+      spriteID: 317b52efd0d30fa44b147ddd16f909dd
+      internalID: 603704751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JenFinshed_13
+      name: EmmyFinshed_13
       rect:
         serializedVersion: 2
-        x: 862
-        y: 5
-        width: 55
-        height: 62
+        x: 874
+        y: 1
+        width: 31
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,20 +397,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6af6a35984e4e6d4dac2b14c52b6a717
-      internalID: -1355203390
+      spriteID: da1b109df5b02cc49aff805db47ee19b
+      internalID: -64559744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JenFinshed_14
+      name: EmmyFinshed_14
       rect:
         serializedVersion: 2
-        x: 929
-        y: 5
-        width: 55
-        height: 62
+        x: 941
+        y: 1
+        width: 31
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,8 +418,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76c926f8ace7a69428cbf0fefba86758
-      internalID: 710614668
+      spriteID: 341f4176cc0bac841859ae4cd35a21cc
+      internalID: 1914788715
       vertices: []
       indices: 
       edges: []
@@ -435,21 +435,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      JenFinshed_0: 1605836416
-      JenFinshed_1: 1507694688
-      JenFinshed_10: 1785401243
-      JenFinshed_11: 1049361163
-      JenFinshed_12: -751757264
-      JenFinshed_13: -1355203390
-      JenFinshed_14: 710614668
-      JenFinshed_2: -802282961
-      JenFinshed_3: -1445419155
-      JenFinshed_4: -1856700339
-      JenFinshed_5: -1308125640
-      JenFinshed_6: -1878222862
-      JenFinshed_7: -684640884
-      JenFinshed_8: -774072246
-      JenFinshed_9: 2056491390
+      EmmyFinshed_0: -686034367
+      EmmyFinshed_1: 1843046310
+      EmmyFinshed_10: -423162760
+      EmmyFinshed_11: 1058232019
+      EmmyFinshed_12: 603704751
+      EmmyFinshed_13: -64559744
+      EmmyFinshed_14: 1914788715
+      EmmyFinshed_2: -381173698
+      EmmyFinshed_3: -62577184
+      EmmyFinshed_4: -1313924808
+      EmmyFinshed_5: 798719026
+      EmmyFinshed_6: 482108877
+      EmmyFinshed_7: 25421689
+      EmmyFinshed_8: 2128899231
+      EmmyFinshed_9: -2142420514
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
