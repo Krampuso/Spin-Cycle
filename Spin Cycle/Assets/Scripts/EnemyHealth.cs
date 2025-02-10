@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int enemyHP = 100;
+    public float enemyHP = 100f;
+    public float enemyMaxHP;
+
     Bullet bullet;
 
     // Start is called before the first frame update
     void Start()
     {
        Debug.Log(enemyHP);
+       enemyMaxHP = enemyHP;
     }
 
     // Update is called once per frame

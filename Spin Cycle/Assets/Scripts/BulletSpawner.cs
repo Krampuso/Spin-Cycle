@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletSpawner : MonoBehaviour
 {
     enum SpawnerType { Straight, Spin, fasterSpin}
+    public EnemyHealth enemyHealthScript; 
 
     [Header("Bullet Attributes")]
     public GameObject bullet;
@@ -20,7 +21,7 @@ public class BulletSpawner : MonoBehaviour
     private float timer = 0f;
     void Start()
     {
-        
+        enemyHealthScript = GetComponentInParent<EnemyHealth>();
     }
 
     // Update is called once per frame
@@ -34,7 +35,12 @@ public class BulletSpawner : MonoBehaviour
             Fire();
             timer = 0;
         }
-        
+        if(enemyHealthScript.enemyHP >= (50 / enemyHealthScript.enemyMaxHP) * 100f - 500){
+           PhaseOne(); 
+        }
+        else if(enemyHealthScript.enemyHP <= (75 / enemyHealthScript.enemyMaxHP) * 100f - 750){
+            PhaseTwo();
+        }
     }
 
     private void Fire() 
@@ -45,8 +51,18 @@ public class BulletSpawner : MonoBehaviour
             spawnedBullet.GetComponent<EnemyBullet>().speed = speed;
             spawnedBullet.GetComponent<EnemyBullet>().bulletLife = bulletsLife;
             spawnedBullet.transform.rotation = transform.rotation;
-
-
         }
+    }
+
+    private void PhaseOne()
+    {
+        if(enemyHealthScript.enemyMaxHP >= (enemyHealthScript.enemyMaxHP / 50))
+        Debug.Log("Still in phase one");
+    }
+
+    private void PhaseTwo()
+    {
+        if(enemyHealthScript.enemyMaxHP >= (enemyHealthScript.enemyMaxHP / 75))
+        Debug.Log("Phase two");
     }
 }
