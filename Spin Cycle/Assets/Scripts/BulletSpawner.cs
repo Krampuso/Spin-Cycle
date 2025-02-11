@@ -35,12 +35,6 @@ public class BulletSpawner : MonoBehaviour
             Fire();
             timer = 0;
         }
-        if(enemyHealthScript.enemyHP >= (50 / enemyHealthScript.enemyMaxHP) * 100f - 500){
-           PhaseOne(); 
-        }
-        else if(enemyHealthScript.enemyHP <= (75 / enemyHealthScript.enemyMaxHP) * 100f - 750){
-            PhaseTwo();
-        }
     }
 
     private void Fire() 
@@ -54,15 +48,4 @@ public class BulletSpawner : MonoBehaviour
         }
     }
 
-    private void PhaseOne()
-    {
-        if(enemyHealthScript.enemyMaxHP >= (enemyHealthScript.enemyMaxHP / 50))
-        Debug.Log("Still in phase one");
-    }
-
-    private void PhaseTwo()
-    {
-        if(enemyHealthScript.enemyMaxHP >= (enemyHealthScript.enemyMaxHP / 75))
-        Debug.Log("Phase two");
-    }
 }
